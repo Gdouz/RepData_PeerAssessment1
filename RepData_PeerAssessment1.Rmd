@@ -7,7 +7,7 @@ RepData_PeerAssessment1
 ###Loading and preprocessing the data
 ```{r,echo=TRUE}
 #Load the data (i.e. read.csv())
-act<-read.csv("C:\\Users\\14911\\Documents\\Statistics\\ÑÐÑ¡¿Î\\JHU\\assignment\\RepData_PeerAssessment1\\activity.csv",sep=",",header=TRUE)
+act<-read.csv("C:\\Users\\14911\\Documents\\Statistics\\ç ”é€‰è¯¾\\JHU\\assignment\\RepData_PeerAssessment1\\activity.csv",sep=",",header=TRUE)
 #Process/transform the data (if necessary) into a format suitable for your analysis
 str(act)
 act$date<-as.character(act$date)
@@ -39,7 +39,7 @@ interval<-act$interval[1:288]
 #Make a time series plot (i.e. type = "l") of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all days (y-axis)
 plot(interval,mean_pi,type="l")
 #Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
-interval[which(mean_pi==min(mean_pi),arr.ind=TRUE)]
+interval[which(mean_pi==max(mean_pi),arr.ind=TRUE)]
 ```
 
 ###Imputing missing values
@@ -48,7 +48,7 @@ interval[which(mean_pi==min(mean_pi),arr.ind=TRUE)]
 sum(is.na(act$steps))
 
 #Fill in all of the missing values in the dataset with the mean for that 5-minute interval
-act_nona<-read.csv("C:\\Users\\14911\\Documents\\Statistics\\ÑÐÑ¡¿Î\\JHU\\assignment\\RepData_PeerAssessment1\\activity.csv",sep=",",header=TRUE)
+act_nona<-read.csv("C:\\Users\\14911\\Documents\\Statistics\\ç ”é€‰è¯¾\\JHU\\assignment\\RepData_PeerAssessment1\\activity.csv",sep=",",header=TRUE)
 act_nona$steps[is.na(act$steps)]<-rep(mean_pi,61)[is.na(act$steps)]
 act_nona$date<-as.character(act_nona$date)
 a_n_d<-split(act_nona,act_nona$date)
@@ -71,7 +71,7 @@ Median total number of steps taken per day remains constant.
 act_nona$date<-as.Date(act_nona$date)
 #Create a new factor variable in the dataset with two levels -- "weekday" and "weekend" indicating whether a given date is a weekday or weekend day.
 act_nona$week<-rep("weekday",17568)
-act_nona$week[weekdays(act_nona$date)%in%c("ÐÇÆÚÁù","ÐÇÆÚÈÕ")]<-"weekend"
+act_nona$week[weekdays(act_nona$date)%in%c("æ˜ŸæœŸå…­","æ˜ŸæœŸæ—¥")]<-"weekend"
 act_nona$week<-factor(act_nona$week,levels=c("weekday","weekend"))
 
 #Make a panel plot containing a time series plot (i.e. type = "l") of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or weekend days (y-axis). 
