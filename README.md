@@ -1,5 +1,5 @@
-#### Something is wrong with my Rstudio,it can't output .md file.
-#### Pictures are all in picture folder,pleeeeeeeeeeeeeese check them there because I still can't figure out the problem.Thank you so much.
+# Something is wrong with my Rstudio,it can't output .md file.
+# Pictures are all in picture folder,pleeeeeeeeeeeeeese check them there because I still can't figure out the problem.Thank you so much.
 
 ## Introduction
 
