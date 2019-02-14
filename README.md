@@ -1,3 +1,6 @@
+#### Something is wrong with my Rstudio,it can't output .md file.
+#### Pictures are all in picture folder,pleeeeeeeeeeeeeese check them there because I still can't figure out the problem.Thank you so much.
+
 ## Introduction
 
 It is now possible to collect a large amount of data about personal
