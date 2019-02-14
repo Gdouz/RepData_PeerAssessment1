@@ -1,4 +1,4 @@
-# Something is wrong with my Rstudio,it can't output .md file.
+# Something is wrong with my Rstudio,it can't output .md file.I tried with R to output but pictures can't be shown.
 # Pictures are all in 'pictures' folder above,pleeeeeeeeeeeeeese check them there because I still can't figure out the problem.Thank you so much.
 
 ## Introduction
